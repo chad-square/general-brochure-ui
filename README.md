@@ -22,3 +22,10 @@ This is a general brochure website created with Angular.
 #### Anchor tags contain relevant hyperlinks
 - When clicked, contact numbers open in a mobile dialer.
 - When clicked, maps open the Google Maps application on mobile devices or the web-UI on large devices.
+
+
+#### General Brochure UI -large view
+file:///home/chad/Videos/Screencasts/general_brochure_UI_large_view.webm
+
+#### General Brochure UI - mobile view
+file:///home/chad/Videos/Screencasts/general_brochure_UI_mobile_view.webm
