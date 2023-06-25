@@ -24,8 +24,8 @@ This is a general brochure website created with Angular.
 - When clicked, maps open the Google Maps application on mobile devices or the web-UI on large devices.
 
 
-#### General Brochure UI -large view
-file:///home/chad/Videos/Screencasts/general_brochure_UI_large_view.webm
+#### General Brochure UI - large view
+[![General Brochure UI - large view](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 #### General Brochure UI - mobile view
-file:///home/chad/Videos/Screencasts/general_brochure_UI_mobile_view.webm
+[![General Brochure UI - mobile view](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
