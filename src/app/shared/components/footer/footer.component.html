@@ -1,0 +1,49 @@
+<div id="footer-container">
+
+  <div class="footer-header footer-logo-container">
+    <figure>
+      <img *ngIf="screenSize === 'large' || screenSize === 'medium'" src="../../../../assets/logo/general-business-logo-large.png" alt="">
+      <img *ngIf="screenSize === 'small'" src="../../../../assets/logo/general-business-logo-large.png" alt="">
+    </figure>
+  </div>
+
+  <div class="footer-item footer-links-container">
+    <ul class="footer-links">
+      <li class="footer-link" routerLink="about">About Us</li>
+      <li class="footer-link" routerLink="services">Services</li>
+      <li class="footer-link" routerLink="gallery">Gallery</li>
+      <li class="footer-link" routerLink="contact">Contact Us</li>
+    </ul>
+  </div>
+
+  <div class="footer-item footer-affiliations-container">
+    <div class="affiliations">
+      <a class="affiliate" href="https://stackoverflow.com/" target="_blank">
+        <img class="" src="../../../../assets/affiliates/overflowstack.png">
+        <p>Stack Overflow</p>
+      </a>
+
+      <a class="affiliate" href="https://angular.io/" target="_blank">
+        <img class="" src="favicon.ico" alt="angularIcon">
+        <p>Angular</p>
+      </a>
+
+      <a class="affiliate" href="https://instagram.com/" target="_blank">
+        <img class="" src="../../../../assets/affiliates/instagram.png">
+        <p>INSTAGRAM</p>
+      </a>
+
+      <a class="affiliate" href="https://facebook.com/" target="_blank">
+        <img class="" src="../../../../assets/affiliates/facebook.png">
+        <p>Facebook</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-item footer-address-container">
+    <p>129 Spark Road, Somewhere</p>
+    <p>Nowhere Town</p>
+    <p>Middle Earth</p>
+    <p>0808</p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div id="hero-container">
+  <section class="slide-wrapper">
+    <figure>
+      <img
+        id="hero-image"
+        #heroImage
+        src="{{currentHeroImage}}"
+        alt="hero-image"
+        [ngClass]="{
+          'hero-image-large': screenSize == 'large',
+          'hero-image-medium': screenSize == 'medium',
+          'hero-image-small': screenSize == 'small'
+          }">
+    </figure>
+  </section>
+</div>

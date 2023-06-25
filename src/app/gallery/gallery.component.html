@@ -1,0 +1,39 @@
+<div #galleryContainer id="gallery-container" class="component-container" screenSizeClassNameManager>
+
+  <app-component-heading headingText="Gallery"></app-component-heading>
+
+  <section class="selection-container">
+    <ng-container *ngFor="let image of images; let imageIndex = index">
+      <ng-container
+        *ngTemplateOutlet="selectionImageTemplate; context: {imgUrl: image, imgIndex: imageIndex}">
+      </ng-container>
+    </ng-container>
+  </section>
+
+</div>
+
+<ng-template #selectionImageTemplate let-imgUrl="imgUrl" let-imgIndex="imgIndex">
+    <figure class="selection-image-container" (click)="openImage(imgUrl, imgIndex)">
+      <img src='{{imgUrl}}' class="selection-image" alt="selection-image" id="{{imgIndex}}">
+    </figure>
+</ng-template>
+
+<ng-template #viewedImageModalTemplate>
+  <figure class="viewed-image-container">
+    <div
+      class="image-close-btn"
+      (click)="closeImage()"
+      aria-hidden="false"
+      aria-label="image-close-icon">
+    </div>
+    <img src="{{selectedImage}}" class="viewed-image" alt="viewed-image">
+    <div class="image-controls">
+      <div class="control-btn control-btn-back" (click)="nextImage('back')">
+        <div  class="control-image go-back-control"></div>
+      </div>
+      <div class="control-btn control-btn-forward" (click)="nextImage('forward')">
+        <div class="control-image go-forward-control"></div>
+      </div>
+    </div>
+  </figure>
+</ng-template>

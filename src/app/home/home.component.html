@@ -1,0 +1,59 @@
+<app-hero-slider></app-hero-slider>
+
+<div class="component-container home-container">
+
+  <div id="card-container" screenSizeClassNameManager>
+  <!-- if these cards dont ever change this section can be a ng-template -->
+    <!-- leaving as-is for customisation -->
+    <div class="home-card call-card">
+      <div class="card-content">
+        <figure class="card-preview"></figure>
+        <div class="card-text-container">
+          <div>
+            <p class="text-line text-line-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nisi!</p>
+            <p class="text-line line-text-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-line text-line-3">Call Us</p>
+          </div>
+          <a href="tel:021xxxxxx" class="link-line call-container">
+            <img src="../../assets/icons/phone.png" class="call-image" alt="call-image">
+            <h2>021-xx-xx-xx</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="home-card">
+      <div class="card-content">
+        <figure class="card-preview"></figure>
+        <div class="card-text-container">
+          <div>
+            <p class="text-line text-line-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nisi!</p>
+            <p class="text-line line-text-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-line text-line-3">Dolor Sit</p>
+          </div>
+          <a routerLink="/services" class="link-line">
+            <h2>Our Services</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="home-card">
+      <div class="card-content">
+        <figure class="card-preview"></figure>
+        <div class="card-text-container">
+          <div>
+            <p class="text-line text-line-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nisi!</p>
+            <p class="text-line line-text-2">Lorem ipsum dolor sit amet.</p>
+            <p class="text-line text-line-3">Dolor Sit</p>
+          </div>
+          <a routerLink="/gallery" class="link-line" >
+            <h2>Gallery</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <app-location></app-location>
+
+</div>

@@ -1,0 +1,3 @@
+- Add a tributes page (similar to https://www.stanfillfh.com/)
+    - pull data from a CMS
+- Add a resources page (similar to https://www.stanfillfh.com/)

@@ -1,0 +1,78 @@
+.text-container {
+  text-align: center;
+  width: 100%;
+}
+
+.contact-details-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  gap: 20px;
+  height: 100%;
+}
+
+.contact-container-large, .contact-container-medium {
+
+  .contact-list, .trading-hours-container {
+    width: 50%;
+
+  }
+  .contact-details-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+.contact-container-large {
+
+}
+
+.contact-container-medium {
+
+}
+
+.contact-container-small {
+
+
+  .contact-details-container {
+    flex-direction: column;
+  }
+}
+
+.contact-list, .trading-hours-container {
+  box-shadow: var(--box-shadow-all-round);
+  border-radius: var(--large-border-radius);
+  text-align: center;
+  width: 100%;
+}
+
+.contact-list {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 170px;
+    margin: 10px auto;
+    gap: 20px;
+
+    .contact-type-image-container {
+      height: 20px;
+      width: 20px;
+    }
+
+    .phone {
+      background: url("../../assets/icons/phone-ringing-14.svg") center no-repeat;
+    }
+
+    .email {
+      background: url("../../assets/icons/at-sign.svg") center no-repeat;
+    }
+  }
+}
+
+.trading-hours-container  {
+  p {
+    margin: 10px;
+  }
+}

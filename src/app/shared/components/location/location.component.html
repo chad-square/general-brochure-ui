@@ -1,0 +1,24 @@
+<div id="location-container" class="location-container" screenSizeClassNameManager>
+
+  <div class="location-text rounded-bottom">
+    <h2>129 Nowhere Road, Somewhere</h2>
+    <h2>Cape Town</h2>
+    <h2>South Africa</h2>
+    <h2>8080</h2>
+  </div>
+
+  <div class="location-component-container">
+      <div class="map-container">
+        <ng-container *ngIf="!isLocationLoading; else locationLoading">
+          <a class="location-link" href="{{linkToMap}}" target="_blank">
+            <img class="google-map" src="{{image}}" alt="">
+          </a>
+        </ng-container>
+        <ng-template #locationLoading>
+          <div class="map-container">
+            <mat-spinner></mat-spinner>
+          </div>
+        </ng-template>
+      </div>
+  </div>
+</div>

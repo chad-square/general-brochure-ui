@@ -1,0 +1,217 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+$brochure-primary-palette: (
+  50: #ffdbbd,
+  100: #ffb9a2,
+  200: #e89580,
+  300: #c7715b,
+  400: #ae5540,
+  500: #953a26,
+  600: #893021,
+  700: #782419,
+  800: #691414,   // chosen base colour
+  900: #58000a,
+  ////A100: #82b1ff,
+  ////A200: #448aff,
+  ////A400: #2979ff,
+  ////A700: #2962ff,
+  contrast: (
+    50: #e4fafa,
+    100: #bef3f1,
+    200: #96eceb,   // chosen base colour
+    300: #71e3e4,
+    400: #5bdcdf,
+    500: #50d5dc,
+    600: #4bc4c9,
+    700: #45aeb0,
+    800: #409998,
+    900: #35746f,
+    ////////A100: $dark-primary-text,
+    ////A200: $light-primary-text,
+    ////A400: $light-primary-text,
+    ////A700: $light-primary-text,
+  )
+);
+
+$brochure-secondary-palette: (
+  50: #e6e8f3,
+  100: #c1c4e2,
+  200: #999ecf,
+  300: #7279bc,
+  400: #555cae,
+  500: #3841a0,
+  600: #333997,
+  700: #2a308c,
+  800: #222680,
+  900: #14146b,   // chosen base colour
+  ////A100: #82b1ff,
+  ////A200: #448aff,
+  ////A400: #2979ff,
+  ////A700: #2962ff,
+  contrast: (
+    50: #fbfae5,
+    100: #f4f2be,
+    200: #eceb94,   // chosen base colour
+    300: #e4e26a,
+    400: #dddc4a,
+    500: #d6d626,
+    600: #c9c421,
+    700: #b7ae1a,
+    800: #a49814,
+    900: #877208,
+    ////A100: $dark-primary-text,
+    ////A200: $light-primary-text,
+    ////A400: $light-primary-text,
+    ////A700: $light-primary-text,
+  )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$brochure-ui-primary: mat.define-palette($brochure-primary-palette);
+$brochure-ui-accent: mat.define-palette($brochure-secondary-palette);
+
+// The warn palette is optional (defaults to red).
+$brochure-ui-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$brochure-ui-theme: mat.define-light-theme((
+  color: (
+    primary: $brochure-ui-primary,
+    accent: $brochure-ui-accent,
+    warn: $brochure-ui-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($brochure-ui-theme);
+
+/* You can add global styles to this file, and also import other style files */
+//body {
+//  margin: 0;
+//  padding: 0;
+//}
+
+:root{
+  --white-1: #fafafa;
+  --white-2: #f5f5f6;
+
+
+  --teal: #1C9696;
+  --teal-light-1: #24c1c1;
+  --teal-light-2: #3edbdb;
+  --teal-light-3: #69e3e3;
+  --teal-light-4: #94ebeb;
+  --teal-light-5: #bff3f3;
+  --teal-light-6: #eafbfb;
+  --teal-dark-1: #146b6b;
+  --teal-dark-2: #0c4040;
+  --teal-dark-3: #041515;
+
+
+  --maroon: #6B1414;
+  --maroon-light-1: #961c1c;
+  --maroon-light-2: #c12424;
+  --maroon-light-3: #db3e3e;
+  --maroon-light-4: #e36969;
+  --maroon-light-5: #eb9494;
+  --maroon-light-6: #f3bfbf;
+  --maroon-light-7: #fbeaea;
+  --maroon-dark-1: #400c0c;
+  --maroon-dark-2: #150404;
+
+
+  --box-shadow-large:  0px 10px 15px -3px rgba(0,0,0,0.1);
+  --box-shadow-medium: 0px 0px 15px -3px rgba(0,0,0,0.1);;
+
+  --box-shadow-top-bottom-large: 0px 10px 15px -3px rgba(0,0,0,0.1),0px -5px 15px -3px rgba(0,0,0,0.1);
+  --box-shadow-top-bottom-medium: 0px 5px 15px -3px rgba(0,0,0,0.1),0px -5px 15px -3px rgba(0,0,0,0.1);
+
+  --box-shadow-all-round: 0px 0px 15px 1px rgba(0,0,0,0.1);
+
+
+  --header-height-large: 205px;
+  --header-height-small: 105px;
+
+  --section-margin: 20px;
+  --large-border-radius: 10px;
+  --small-border-radius: 5px;
+
+
+}
+
+.rounded-bottom {
+  border-bottom-right-radius: var(--large-border-radius);
+  border-bottom-left-radius: var(--large-border-radius);
+}
+
+.component-container {
+  width: 95vw;
+  margin: 20px auto 20px auto;
+}
+
+.heading {
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  //font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: var(--white-1);
+}
+
+article, section, figure {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: var(--teal-light-5);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: var(--teal);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--teal-light-1);
+}
+
+.asd .mat-mdc-progress-spinner .mdc-circular-progress__determinate-circle, .mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: var(--teal) !important;
+}
+
+
+

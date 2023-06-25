@@ -1,0 +1,138 @@
+.selection-container {
+  display: grid;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-all-round);
+}
+
+.gallery-container-large {
+  .selection-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .selection-image-container {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.gallery-container-medium {
+  .selection-container {
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .selection-image-container {
+      height: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.gallery-container-small {
+  .selection-container {
+    grid-template-columns: 1fr 1fr;
+
+    .selection-image-container {
+      height: 200px;
+      max-width: 200px;
+    }
+  }
+}
+
+.selection-image-container {
+  transition: 500ms ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    scale: 1.01;
+  }
+}
+
+.selection-image {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-all-round);
+}
+
+.image-close-btn {
+  position: absolute;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  background: url("../../assets/icons/close.svg") center no-repeat;
+  margin: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+.viewed-image-container {
+  height: 100%;
+  overflow: hidden;
+
+  .viewed-image {
+    height: 100%;
+    width: 100%;
+  }
+
+
+
+}
+
+.image-controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  border-radius: var(--small-border-radius);
+
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+
+  .control-btn {
+    width: 100%;
+    background-color: var(--white-1);
+    opacity: 0.5;
+
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(148, 148, 148);
+    }
+  }
+
+  .control-btn-back {
+    border-top-left-radius: var(--small-border-radius);
+    border-bottom-left-radius: var(--small-border-radius);
+  }
+
+  .control-btn-forward {
+    border-top-right-radius: var(--small-border-radius);
+    border-bottom-right-radius: var(--small-border-radius);
+  }
+
+  .control-image {
+    height: 32px;
+    width: 32px;
+    margin: 10px auto;
+
+    &:active {
+      background-color: transparent;
+    }
+  }
+
+  .go-back-control {
+    rotate: 180deg;
+    background: url("../../assets/icons/arrow.svg") no-repeat center;    //icon not working !!!!!
+  }
+
+  .go-forward-control {
+    background: url("../../assets/icons/arrow.svg") no-repeat center;    //icon not working !!!!!
+  }
+}
+

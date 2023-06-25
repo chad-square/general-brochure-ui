@@ -1,0 +1,134 @@
+.home-container {}
+
+#card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: var(--section-margin);
+}
+
+.card-container-large {
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: var(--section-margin);
+}
+
+.card-container-medium {
+  gap: 10px;
+}
+.card-container-large, .card-container-medium {
+  .call-container {
+    gap: 20px;
+  }
+}
+
+.card-container-small {
+  gap: 20px;
+  flex-direction: column;
+
+  .call-card {
+    height: 370px;
+
+    .link-line {
+      height: 70px !important;
+    }
+  }
+
+  .call-container {
+    flex-direction: column;
+  }
+}
+
+.home-card {
+  height: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--box-shadow-all-round);
+  border-radius: var(--large-border-radius);
+}
+
+.card-content {
+  width: 100%;
+  border-radius: var(--large-border-radius);
+  padding: 0 !important;
+
+  .card-preview {
+    border-top-right-radius: var(--large-border-radius);
+    border-top-left-radius: var(--large-border-radius);
+    height: 150px;
+    width: 100%;
+    margin: 0;
+    background-color: #ae5540;
+  }
+
+  .card-text-container {
+
+    div {
+      padding: 10px 0 0 0;
+      height: 150px;
+      width: 100%;
+      background-color: var(--teal);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+
+      .text-line {
+        color: var(--white-2);
+        margin: 0 10px 0 10px;
+      }
+
+      .text-line-1 {}
+
+      .link-line {}
+
+      .line-text-2 {}
+    }
+
+    .call-container {
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        margin: 0 !important;
+      }
+
+      .call-image {
+        height: 30px;
+        width: 30px;
+      }
+    }
+
+    .link-line {
+      background: var(--teal-light-4);
+      text-align: center;
+      height: 50px;
+      width: 100%;
+      text-decoration: none;
+      display: flex;
+      border-bottom-right-radius: var(--large-border-radius);
+      border-bottom-left-radius: var(--large-border-radius);
+      transition: background-color 0.5s ease;
+
+      &:hover {
+        background-color: var(--teal-dark-1);
+        h2 {
+          color: var(--white-1);
+        }
+      }
+
+      h2 {
+        color: var(--teal);
+        border-bottom-right-radius: var(--large-border-radius);
+        border-bottom-left-radius: var(--large-border-radius);
+        margin: auto;
+        transition: background-color 0.5s ease;
+      }
+    }
+  }
+}
+
+
+

@@ -1,0 +1,9 @@
+<app-header id="header"></app-header>
+<div class="main-area-container" [ngClass]="{
+  'large-container': screenSize == 'large',
+  'medium-container': screenSize == 'medium',
+  'small-container': screenSize == 'small'}">
+  <router-outlet></router-outlet>
+    <app-footer id="footer"></app-footer>
+</div>
+

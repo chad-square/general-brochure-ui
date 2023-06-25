@@ -1,0 +1,33 @@
+
+#header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.main-area-container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+
+}
+
+.large-container {
+  top: var(--header-height-large);
+}
+
+.medium-container {
+  top: var(--header-height-large);
+}
+
+.small-container {
+  top: var(--header-height-small);
+}
+
+
+#footer {
+  margin: 0;
+  padding: 0;
+
+  width: 100%;
+}

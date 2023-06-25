@@ -1,0 +1,95 @@
+<header id="header-container" screenSizeClassNameManager>
+
+  <div *ngIf="screenSize == 'small'" class="mobile-menu-icon-container">
+    <mat-icon
+      fontIcon="menu"
+      (click)="toggleMobileMenu()"
+      aria-hidden="false"
+      aria-label="mobile-nav-icon"
+      class="mobile-nav-icon">
+    </mat-icon>
+  </div>
+
+  <a routerLink="home" id="header-logo-container" class="header-logo-container" screenSizeClassNameManager>
+      <img *ngIf="screenSize == 'large'" src="../../../assets/logo/general-business-logo-large.png" alt="general-business-logo-large.png">
+      <img *ngIf="screenSize == 'medium' || screenSize == 'small'" src="../../../assets/logo/general-business-logo-small.png" alt="general-business-logo-small.png">
+  </a>
+
+  <ng-container *ngIf="screenSize == 'medium' || screenSize === 'large'">
+    <div class="nav-links-container-large">
+      <nav>
+        <ul class="large-nav-list" routerLinkActive="active">
+
+          <li class="nav-item-large" routerLink="services">
+            <a class="nav-link">Services</a>
+          </li>
+
+          <li class="nav-item-large" routerLink="about">
+            <a class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item-large" routerLink="gallery">
+            <a class="nav-link">Gallery</a>
+          </li>
+
+          <li class="nav-item-large" routerLink="contact">
+            <a class="nav-link">Contact Us</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+  </ng-container>
+
+</header>
+
+
+<aside [@toggleMobileMenu]="isOpen" class="mobile-menu">
+  <div class="mobile-nav-container">
+
+    <div class="mobile-menu-close-icon-container">
+      <div
+        class="mobile-menu-close-btn"
+        (click)="closeMobileMenu()"
+        aria-hidden="false"
+        aria-label="mobile-nav-icon">
+      </div>
+    </div>
+
+    <nav>
+      <ul id="navListMobile" routerLinkActive="active">
+
+        <li class="nav-item-mobile" (click)="closeMobileMenu()">
+          <a class="nav-link" routerLink="services" routerLinkActive="active-mobile-link">
+            Services
+          </a>
+        </li>
+
+        <li class="nav-item-mobile" (click)="closeMobileMenu()">
+          <a class="nav-link" routerLink="about" routerLinkActive="active-mobile-link">
+            About Us
+          </a>
+        </li>
+
+        <li class="nav-item-mobile" (click)="closeMobileMenu()">
+          <a class="nav-link" routerLink="gallery" routerLinkActive="active-mobile-link">
+            Gallery
+          </a>
+        </li>
+
+        <li class="nav-item-mobile" (click)="closeMobileMenu()">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active-mobile-link">
+            Contact Us
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <figure>
+      <img src="../../../../assets/logo/general-business-logo-small.png" alt="general-business-logo-small.png">
+    </figure>
+
+  </div>
+</aside>
+
