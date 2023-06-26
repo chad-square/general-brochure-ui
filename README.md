@@ -25,7 +25,7 @@ This is a general brochure website created with Angular.
 
 
 #### General Brochure UI - large view
-[![General Brochure UI - large view](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+
 
 #### General Brochure UI - mobile view
-[![General Brochure UI - mobile view](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
+file:///home/chad/Videos/Screencasts/mobile-screen.mp4
