@@ -23,11 +23,3 @@ This is a general brochure website created with Angular.
  - When clicked, contact numbers open in a mobile dialer.
  - When clicked, maps open the Google Maps application on mobile devices or the web-UI on large devices.
 
-
-#### General Brochure UI - large view
-[<img src="./large-screen.mp4" width="600" height="300"
-/>](./large-screen.mp4)
-
-#### General Brochure UI - mobile view
-[<img src="./mobile-screen.mp4" width="600" height="300"
-/>](./mobile-screen.mp4)
